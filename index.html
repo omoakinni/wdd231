@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Tomiwa Akinlolu Ariyo portfolio page for Web and Computer Programming Certificate, showcasing completed courses and projects.">
+            <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+            <link rel="manifest" href="images/site.webmanifest">
+    <title>Tomiwa Akinlolu Ariyo - WDD 231 - Web Frontend Development 1 </title>
+    <meta name="author" content="Tomiwa Akinlolu Ariyo">
+    
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/akinlolu-ariyo-photo.jpg" alt="Tomiwa Akinlolu Ariyo's Profile Picture" width="90"
+                    height="90">
+                <h1>Tomiwa Akinlolu Ariyo</h1>
+            </div>
+    
+            <nav>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Chamber</a></li>
+                    <li><a href="https://github.com/omoakinni">GitHub Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/akinlolu-ariyo">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<div class="container-2">
+    <div class="container-3">
+        <section class="coursework">
+            <h2>Course Work</h2>
+            <ul id="courseList">
+                <!-- Dynamically populated with JavaScript -->
+            </ul>
+        </section>
+    
+        <section class="location">
+            <h2>Arizona Temple, USA</h2>
+            <div class="image-container">
+                <img src="images/arizona-temple.webp" alt="Arizona Temple" width="300" height="200">
+    
+            </div>
+            <p>Arizona, USA</p>
+        </section>
+    </div>
+
+<div>
+    <section class="certificate">
+        <h2>Web and Computer Programming Certificate</h2>
+
+        <div class="filter-buttons">
+            <button id="allCourses" class="actionBtn active-filter-button">All</button>
+            <button id="cseCourses" class="actionBtn">CSE</button>
+            <button id="wddCourses" class="actionBtn">WDD</button>
+        </div>
+
+        <div id="courseCards" class="course-cards"></div>
+        <dialog class="course-details"></dialog>
+    </section>
+</div>
+
+</div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p> &copy; <span id="currentyear"></span> 🌹Akinlolu Tomiwa Ariyo 🌹Nigeria</p>
+            <p id="lastModified"></p>
+        </div>
+        <div class="flag-container"><img src="images/nigerian-flag.jpg" alt="Nigerian flag" width="45" height="30"></div>
+    </footer>
+</body>
+</html>
