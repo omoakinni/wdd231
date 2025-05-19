@@ -1,2 +1,2 @@
 # wdd231
-WDD 231 BUY
+WDD 231 BYU-Idaho
