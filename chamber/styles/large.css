@@ -1,0 +1,36 @@
+@media only screen and (min-width: 38rem) {
+    #menu {
+        display: none;  
+
+    }
+    ul.navigation, ul.navigation.open {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    ul.navigation a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: tomato;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    header p {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    
+
+    
+}
