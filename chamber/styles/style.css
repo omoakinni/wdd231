@@ -1,0 +1,251 @@
+
+
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  
+  color: rgb(235, 67, 6);
+}
+
+h1 {
+  font-size: 2rem;
+  
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0;
+  
+}
+
+a {
+  
+  text-decoration: none;
+
+}
+
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items:start; 
+  background-color: #4f0475;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: left;
+  
+
+  }
+
+nav {
+  background-color: #d68fef;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+  
+  
+}
+
+#menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: .25rem 2vw;
+}
+
+#menu::before {
+  content: "\2630"; /* FontAwesome icon for hamburger menu */
+  font-family: FontAwesome;
+  font-size: 1.5rem;
+}
+
+/*nav ul {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}*/
+
+ul.navigation li a{
+  
+  display: block;
+  padding: .75rem 2vw;   
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+/*nav a {
+  color: #fff;
+  font-weight: bold;
+}*/
+
+li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  
+}
+
+ul.navigation {
+ 
+  list-style-type: none;
+}
+
+#menu.open::before {
+  content: "\2715"; /* FontAwesome icon for close menu */
+}
+
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+/*nav a.active {
+  text-decoration: underline;
+}*/
+
+/* View Toggle */
+.view-toggle {
+  text-align: center;
+  margin: 2rem 0 1rem;
+    
+}
+
+.view-toggle button {
+    
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0056a6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-toggle button:hover {
+  background-color: #003f7d;
+}
+
+/* Member Grid & List Styles */
+#members-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.list-view {
+  display: block;
+}
+
+.list-view .member-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.list-view .member-card img {
+  display: none;
+}
+
+.list-view .member-card:nth-child(odd) {
+  background-color: #eeebde;
+}
+
+.member-card {
+  background: #fff;
+  border-left: 5px solid transparent;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+  transform: scale(1.02);
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.member-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #003366;
+}
+
+/* Membership Level Styling */
+.level-1 {
+  border-left-color: #777; /* Member - gray */
+}
+
+.level-2 {
+  border-left-color: #c0c0c0; /* Silver - silver */
+  background-color: #f7f7f7;
+}
+
+.level-3 {
+  border-left-color: #ffd700; /* Gold - gold */
+  background-color: #fffdf2;
+}
+
+/* Footer */
+footer {
+  background-color: #bf98f9;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .view-toggle button {
+    display: block;
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+}
+
+
