@@ -196,23 +196,23 @@ body {
   padding: 1rem;
   text-align: center;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #f1ebda;
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
 .spotlight-card.level-1 {
-  border-top: 4px solid gold;
-    background-color: #a0946d;
+  border-top: 4px solid rgb(228, 227, 217);
+    background-color: #fff;;
     color: #222;
 }
 
 .spotlight-card.level-2 {
-  border-top: 4px solid silver;
-    background-color: silver;
+  border-top: 4px solid #e6dfc1;;
+    background-color: #e9e5d4;;
 }
 .spotlight-card.level-3 {
-  border-top: 4px solid gold;
-    background-color: gold;
+  border-top: 4px solid rgb(233, 227, 199);
+    background-color: rgb(240, 237, 223);
 }
 
 /* Responsive tweaks */
