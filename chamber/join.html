@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Standard Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Nigeria Chamber of Commerce. Empowering local businesses and community growth.">    
+    <meta name="author" content="Tomiwa Akinlolu Ariyo">
+    
+    <!-- Title -->
+    <title>Join The Nigeria Chamber of Commerce | Local Business Network</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content=" Join The Nigeria Chamber of Commerce | Local Business Network">
+    <meta property="og:description" content="Connecting businesses and fostering economic growth in Nigeria">
+    <meta property="og:image" content="https://github.com/omoakinni/wdd231/blob/main/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://omoakinni.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+  <header class="directory-header">
+    <img src="images/ncclogo.png" alt="Nigeria Chamber of Commerce Logo" width="34" height="40" loading="lazy">
+    <p>The Nigeria Chamber of Commerce</p>
+    <button id="menu" aria-label="menu"></button>
+    </header>
+    <nav id="animated-menu">
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="active"><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+
+
+    <main class="join">
+        
+    <h1>Join The Nigeria Chamber of Commerce</h1>
+    <section class="form-card">
+   <form method="GET" action="thankyou.html" class="form">
+    
+    <label>
+      First Name:
+      <input type="text" name="firstName" required="" title="First Name" autocomplete="given-name">
+    </label>
+
+    <label>
+      Last Name:
+      <input type="text" name="lastName" required="" title="Last Name" autocomplete="family-name">
+    </label>
+
+    <label>
+      Organizational Title:
+      <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+    </label>
+
+    <label>
+      Email Address:
+      <input type="email" name="email" required="" title="Email Address" autocomplete="email" placeholder="example@domain.com">
+    </label>
+
+    <label>
+      Mobile Phone:
+      <input type="tel" name="phone" required="" title="Mobile Phone Number" autocomplete="tel" placeholder="">
+    </label>
+
+
+    <label>
+      Organization Name:
+      <input type="text" name="organization" required="" title="Business or Organization Name" autocomplete="organization">
+    </label>
+
+    <label>
+      Membership Level:
+      <select name="membership" title="Membership Level">
+        <option value="np">NP Membership (Non-Profit)</option>
+        <option value="bronze">Bronze Membership</option>
+        <option value="silver">Silver Membership</option>
+        <option value="gold">Gold Membership</option>
+      </select>
+    </label>
+
+    <label>
+      Organization Description:
+      <textarea name="orgDescription" title="Description of your Business or Organization"></textarea>
+    </label>
+
+    <input type="hidden" name="timestamp" id="timestamp" value="2025-06-08T15:37:26.156Z">
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <div class="cards">
+    <div class="card"><h3>NP Membership</h3><a onclick="openModal('modal-np')">View Benefits</a></div>
+    <div class="card"><h3>Bronze Membership</h3><a onclick="openModal('modal-bronze')">View Benefits</a></div>
+    <div class="card"><h3>Silver Membership</h3><a onclick="openModal('modal-silver')">View Benefits</a></div>
+    <div class="card"><h3>Gold Membership</h3><a onclick="openModal('modal-gold')">View Benefits</a></div>
+  </div>
+    </section>
+
+     
+
+  <!-- Modals -->
+  <div id="modal-np" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <h4>NP Membership Benefits</h4>
+      <ul><li>No membership fee</li><li>Event invitations</li><li>Networking opportunities</li></ul>
+    </div>
+  </div>
+
+  <div id="modal-bronze" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <h4>Bronze Membership Benefits</h4>
+      <ul><li>All NP benefits</li><li>Discounted training sessions</li><li>Monthly newsletter</li></ul>
+    </div>
+  </div>
+
+  <div id="modal-silver" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <h4>Silver Membership Benefits</h4>
+      <ul><li>All Bronze benefits</li><li>Spotlight advertising</li><li>Discounted event tickets</li></ul>
+    </div>
+  </div>
+
+  <div id="modal-gold" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <h4>Gold Membership Benefits</h4>
+      <ul><li>All Silver benefits</li><li>Premium event access</li><li>Free advertising space</li></ul>
+    </div>
+  </div>
+
+ 
+
+  
+  
+    
+  </main>
+
+  <footer>
+    <p>Contact us: enquire@nigeriachamber.org | +234-803-123-4567</p>
+    <p>© <span id="year">2025</span> Nigeria Chamber of Commerce</p>
+    <p>Developed by Akinlolu | Last modified: <span id="lastModified">05/24/2025 18:17:13</span></p>
+  </footer>
+
+  
+<script src="scripts/join.js" defer=""></script>
+  
+ 
+
+ </body>
+</html>

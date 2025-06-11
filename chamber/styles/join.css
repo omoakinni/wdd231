@@ -1,0 +1,228 @@
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    
+    /*label {
+    input, textarea, select {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      margin-bottom: 1px;
+      box-sizing: border-box;
+    }
+      margin-top: 4px;
+      margin-bottom: 15px;
+    }*/
+    /*.cards {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      animation: fadeInCards 2s ease-in-out;
+    }
+    .card {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card a {
+      color: #007BFF;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    @keyframes fadeInCards {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .cards {
+        margin-top: 20px;
+      }
+    }*/
+
+    /*.form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: #f9f9f9;
+        padding: 30px 24px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        margin: 0 auto;
+        
+        max-width: 380px;
+    }*/
+
+
+    form {
+        margin: 0 auto;
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+  
+    label {
+      display: block;
+      font-size: 1rem;
+      color: purple;
+      padding-top: 1rem;
+      margin: .1rem 1rem 1rem 1rem ;
+
+    }
+    
+  
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    select, textarea {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1rem;
+      color: #d0d2e2;
+      width: 350px;
+    }
+  
+    input:required {outline}
+    input:focus {border-left-color: black; outline:none;}
+    input:required:valid{border-left-color: green;}
+  
+    input[type=submit] {
+      border: none;
+      text-align: center;
+      background-color: #3D405B;
+      color: white;
+      border-radius: 1rem;
+      padding: .75rem 1.5rem;
+      margin: 0 1rem 1rem 1rem;
+      font-size: 1.2rem;
+      -webkit-appearance: none;
+      appearance: none;
+      width: 350px;
+    }
+  
+
+
+    .form-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .cards {
+      display: flex;
+      max-width: 380px;
+      width: 100%;
+      flex-direction: column;
+      gap: 15px;
+      background: #f9f9f9;
+      padding: 30px 24px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      
+      margin: 0 auto;
+
+      animation: fadeInCards 2s ease-in-out;
+      height: fit-content;
+    }
+    .card {
+      max-width: 480px;  
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+      color: white;
+      
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card a {
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+      
+    }
+    /* unvisited link */
+.card a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+.card a:visited {
+  color: rgb(23, 42, 23);
+}
+
+/* mouse over link */
+.card a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.card a:active {
+  color: rgb(229, 229, 234);
+}
+    .card:nth-child(1) { background-color: rgb(199, 152, 238);}
+    .card:nth-child(2) { background-color: rgb(199, 152, 238);}
+    .card:nth-child(3) { background-color: rgb(199, 152, 238); }
+    .card:nth-child(4) { background-color: rgb(199, 152, 238); }
+    @keyframes fadeInCards {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      body { flex-direction: column; }
+      .cards { margin-top: 20px; }
+    }
+
+    /*.modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }*/
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+
+    .modal {
+      display: flex;
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      transition: visibility 0s linear 0.3s, opacity 0.3s;
+    }
+    .modal.active {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0s;
+    }
+   
