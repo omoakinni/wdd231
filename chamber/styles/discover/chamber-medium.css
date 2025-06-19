@@ -1,0 +1,18 @@
+
+@media only screen and (min-width: 640px) {
+      .card {
+      
+      grid-template-areas:
+          "picture name"
+          "picture description"
+          "picture address"
+          "picture button";
+    }
+    .card img:hover {
+      transform: var(--hover-effect);
+      width: 450px;
+      height: auto;
+    }
+      
+      
+    }

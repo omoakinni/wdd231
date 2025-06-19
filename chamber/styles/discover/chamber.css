@@ -1,0 +1,92 @@
+
+:root {
+      --hover-effect: scale(1.05);
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    header {
+      grid-area: header;
+      background: #005b96;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    aside {
+      grid-area: sidebar;
+      background: #e6f2ff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    main {
+      grid-area: main;
+      display: grid;
+      gap: 1rem;
+    }
+    footer {
+      grid-area: footer;
+      background: #003f63;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+   
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      
+      
+      
+      margin: 0.5rem;
+      
+      display: grid;
+      gap: .5rem;
+      
+      grid-template-areas:
+          "name"
+          "picture"
+          "description"
+          "address"
+          "button";
+    }
+    .card h2 {
+      grid-area: name;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+     .card img {
+      grid-area: picture ;
+      transition: transform 0.3s ease-in-out;
+    }
+    .card p {
+      margin-bottom: 0rem;
+      margin-top: 0rem;
+      grid-area: description ;
+    }
+    .card address {
+      grid-area: address ;
+    }
+    .card button {
+      grid-area: button ;
+    }
+    
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      
+    }
+    button {
+      margin-top: 0rem;
+      padding: 0.5rem 1rem;
+      background: #033f66;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 35%;
+    }
