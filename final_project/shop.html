@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Akinlolu Tomiwa Ariyo">
+    <meta name="description"
+        content="WDD 131 Final project - HealthyDiet your one stop website for healthy Takeouts orders">
+    <title> HealthyDiet | Shop Meals</title>
+    <script defer src="scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+    <!-- ============================ Header section starts here ============================-->
+    <header>
+        <!-- ------------------- Header nav section starts here ------------------------- -->
+
+
+        <section class="header-nav">
+            <div class="backdrop"></div>
+
+            <nav class="brand-container brand ">
+                <div class="header-brand">
+                    <span class="brand-logo"><i class="fas fa-seedling" aria-hidden="true"></i></span>
+                    <span class="brand-title">HealthyDiet</span>
+                </div>
+                <!--  Animated hamburger menu starts here -->
+                <div class="hamburger">
+                    <div class="bars"></div>
+                </div>
+                <!--  Animated hamburger menu ends here -->
+                <ul class="desktop-nav-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <button class="btn btn-main" onclick="toggleCart()">View cart <i class="fa fa-shopping-basket"
+                            aria-hidden="true"></i>(<span id="cart-count">0</span>)</button>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="mobile-nav-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <span><button class="btn btn-main" onclick="toggleCart()">View cart<i class="fa fa-shopping-basket"
+                            aria-hidden="true"></i>(<span id="cart-count">0</span>)</button></span>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- ------------------- Header nav section ends here ------------------------- -->
+    </header>
+    <!-- ============================ Header section ends here ============================-->
+
+    <!-- ============================ Main section starts here ============================-->
+
+    <main>
+        <!-- ------------------- Common section starts here ------------------------- -->
+
+        <section class="common-section">
+            <h1 class="section-tittles">Shop</h1>
+        </section>
+        <!-- ------------------- Common section ends here ------------------------- -->
+
+
+        <!-- ------------------- Products container section starts here ------------------------- -->
+        <section class="products-container">
+
+            <aside>
+                <h2>Filter <br/>by Category</h2>
+                <ul id="category-filter">
+                    <li onclick="filterProducts('all')">All</li>
+                    <li onclick="filterProducts('fruits')">Fruits</li>
+                    <li onclick="filterProducts('solids')">Solids</li>
+                    <li onclick="filterProducts('wholegrain')">whole grains</li>
+                    <li onclick="filterProducts('vegetarian')">Vegetarian</li>
+                </ul>
+            </aside>
+            <section id="product-list">
+                <!-- Products to be injected here from-->
+            </section>
+        </section>
+
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-content">
+                <span class="close" onclick="toggleCart()">&times;</span>
+                <h2>Your Cart</h2>
+                <ul id="cart-items">
+                    <!-- Cart items will be injected here -->
+                </ul>
+            </div>
+        </div>
+        <!-- ------------------- Products container section ends here ------------------------- -->
+
+
+
+    </main>
+    <!-- ============================ Main section ends here ============================ -->
+    <!-- ============================ Footer section starts here ============================ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-details">
+
+                <div class="footer-brand-con">
+                    <span class="brand-logo"><i class="fas fa-seedling" aria-hidden="true"></i></span>
+
+                    <h2 class="footer-brand">Healthy<span>Diet</span></h2>
+
+                </div>
+            </div>
+
+            <div class="footer-details-con">
+                <ul class="footer-quick-links">
+                    <li><a class="quick-links-tittle" href="">who we are</a></li>
+                    <li><a href="#">Our history</a></li>
+                    <li><a href="#">Our brand</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-details-con">
+                <ul class="footer-quick-links">
+                    <li><a class="quick-links-tittle" href="">what we do</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Financies</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-details-con">
+                <ul class="footer-quick-links">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Employment</a></li>
+                    <li><a href="https://www.linkedin.com/in/akinlolu-ariyoi" target="_blank">Contact Developer</a>
+                    </li>
+                </ul>
+                <div class="footer-icon-container">
+                    <a class="footer-icon" href="https://www.linkedin.com/in/akinlolu-ariyo" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a class="footer-icon" href="https://omoakinni.github.io/wdd231" target="_blank"> <i class="fa fa-external-link"
+                            aria-hidden="true"></i></a>
+                    <a class="footer-icon" href="https://omoakinni.github.io/wdd231"
+                        target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </section>
+        <div class="footer-copyright">&copy; Copyright 2025,AIE Interior project by Akinlolu Tomiwa Ariyo
+        </div>
+        <ul class="footer-bottom-navigators">
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">CARRERS</a></li>
+            <li><a href="#">PRIVACY</a></li>
+            <li><a href="#">TERMS</a></li>
+        </ul>
+    </footer>
+    <!-- ============================ Footer section ends here ============================ -->
+
+</body>
+
+</html>
