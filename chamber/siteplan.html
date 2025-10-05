@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Plan | AIE INTERIOR</title>
     <meta name="description" content="AIE INTERIOR Site Plan">
-    <meta name="author" content="Yamsir Hernandez Perez">
+    <meta name="author" content="Akinlolu Ariyo">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://omoakinni.github.io/wdd231/">
@@ -37,44 +37,39 @@
 </head>
 <body>
     <header>
-        <h1>AIE INTERIOR- Site Plan</h1>
+        <h1>AIE INTERIOR - Site Plan</h1>
     </header>
     <main>
         <section>
             <h2>Site Name</h2>
-            <p>AIE INTERIOR </p>
-            <p>AIE Interior is an interior company location in Ibadan, Oyo State, Nigeria where I'm from. This name was chosen to represent the name of family who created the company. It's simple, descriptive and emphasizes. Our aim is to attract client from everywhere in the world.</p>
+            <p>AIE INTERIOR</p>
+            <p>AIE Interior is an interior company located in Ibadan, Oyo State, Nigeria where I'm from. This name was chosen to represent the family who created the company. It's simple, descriptive and emphasizes our brand. Our aim is to attract clients from everywhere in the world.</p>
             <p>Domain: <em>aieinterior.org</em><strong> (WIP)</strong></p>
         </section>
         <section>
             <h2>Site Purpose</h2>
-            <p>The website showcase the product they sell, and also promotes quality services they can render.</p>
+            <p>The website showcases the products we sell, and also promotes the quality services we can render to transform interior spaces.</p>
         </section>
         <section>
             <h2>Scenarios</h2>
             <ul>
-                <li>Creating balanced, purposeful, and personalized interior spaces. ?</li>
+                <li>Creating balanced, purposeful, and personalized interior spaces</li>
+                <li>What services does AIE Interior offer for residential spaces?</li>
                 <li>AIE Interiors brings your vision to life with virtual design, combining realistic visuals, expert planning, and carefully selected materials to transform any space</li>
+                <li>How do we help our customers?</li>
             </ul>
         </section>
         <section>
             <h2>Color Scheme</h2>
-            <h3>Withe Mode</h3>
+            <h3>Light Mode</h3>
             <ul>
-                <li><strong>BG Color:   </strong>#f8ffff</li>
-                <div class="color1"></div>
-                <li><strong>Primary Color:  </strong>#3d3f8a</li>
-                <div class="color2"></div>
-                <li><strong>Second Color:   </strong>#e82314</li>
-                <div class="color3"></div>
+                <li><strong>Background Color: </strong>#f8ffff <div class="color-swatch color1"></div></li>
+                <li><strong>Primary Color: </strong>#3d3f8a <div class="color-swatch color2"></div></li>
+                <li><strong>Secondary Color: </strong>#e82314 <div class="color-swatch color3"></div></li>
             </ul>
 
             <h3>Dark Mode</h3>
-            <ul>
-                <li><strong>BG Color:   </strong>#</li>
-                <li><strong>Primary Color:  </strong>#</li>
-                <li><strong>Second Color:   </strong>#</li>
-            </ul>
+            <p>Dark mode color scheme to be based on accessibility requirements.</p>
         </section>
         <section>
             <h2>Typography</h2>
@@ -82,15 +77,74 @@
                 <li><strong>Heading Font: </strong>Montserrat - for titles and section headings</li>
                 <li><strong>Body Font: </strong>Roboto - for paragraphs and normal text</li>
             </ul>
+            <div style="font-family: 'Montserrat', sans-serif; margin-top: 15px;">
+                <h3 style="font-family: 'Montserrat', sans-serif;">Montserrat Example</h3>
+                <p style="font-family: 'Roboto', sans-serif;">Roboto example for body text - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+            </div>
         </section>
         <section>
-            <h2>Wireframe</h2>
-            <h3>Desktop View</h3>
-            <img src="images/desktop-view.jpg" alt="Desktop Wireframe">
-
-            <h3>Mobile Wireframe</h3>
-            <img src="images/mobile-view.jpg" alt="Mobile Wireframe">
+            <h2>Wireframes</h2>
+            
+            <div class="toggle-container">
+                <button class="toggle-btn active" data-target="desktop">Desktop View</button>
+                <button class="toggle-btn" data-target="mobile">Mobile View</button>
+            </div>
+            
+            <div id="desktop" class="wireframe-view active">
+                <h3>Desktop Wireframe</h3>
+                <div class="wireframe-container">
+                    <div class="wireframe-header">AIE INTERIOR - Header with Logo and Navigation</div>
+                    <div class="wireframe-nav">Main Navigation Menu</div>
+                    <div class="wireframe-main">
+                        <div class="wireframe-sidebar">Sidebar/Filter Options</div>
+                        <div class="wireframe-content">Main Content Area - Gallery/Product Showcase</div>
+                    </div>
+                    <div class="wireframe-footer">Footer with Contact Info & Social Links</div>
+                </div>
+            </div>
+            
+            <div id="mobile" class="wireframe-view">
+                <h3>Mobile Wireframe</h3>
+                <div class="wireframe-container mobile-wireframe">
+                    <div class="mobile-header">
+                        <div>Logo</div>
+                        <div>Menu</div>
+                    </div>
+                    <div class="mobile-nav">Navigation Tabs</div>
+                    <div class="mobile-content">Main Content - Scrollable Gallery</div>
+                    <div class="tab-bar">
+                        <div class="tab"></div>
+                        <div class="tab"></div>
+                        <div class="tab"></div>
+                        <div class="tab"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <script>
+        // Toggle between desktop and mobile wireframe views
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.toggle-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Hide all wireframe views
+                document.querySelectorAll('.wireframe-view').forEach(view => {
+                    view.classList.remove('active');
+                });
+                
+                // Show the target wireframe view
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
