@@ -1,0 +1,62 @@
+{
+  "places": 
+  [
+    
+    {
+      "id": 1,
+      "name": "Lekki Conservation Center",
+      "image": "images/lekki-conservation.jpg",
+      "address": "The Lekki Conservation Centre Lagos Nigeria",
+      "description": "The Lekki Conservation Centre in Lagos, Nigeria, is a prominent nature reserve and ecotourism destination, known for its 401-meter-long canopy walkway, the longest in Africa, and its focus on preserving the diverse flora and fauna of the Lekki Peninsula."
+    },
+    {
+      "id": 2,
+      "name": "The Yusufari Sand Dunes",
+      "image": "images/the-dune.jpg",
+      "address": "Yobe State, Nigeria",
+      "description": "Stunning example of desert landscape, offering a unique experience for nature lovers and adventurers. These dunes, part of the Sahara Desert, provide breathtaking views and a serene environment."
+    },
+    {
+      "id": 3,
+      "name": "Osun Osogbo Sacred Place",
+      "image": "images/osun-osogbo-sacred.jpg",
+      "address": "Osogbo, Osun State, Nigeria",
+      "description": "The Osun-Osogbo Sacred Grove is a UNESCO World Heritage site located in Osogbo, Nigeria, known for its cultural and historical significance as a sacred forest and shrine dedicated to the Yoruba goddess Osun."
+    },
+    {
+      "id": 4,
+      "name": "National Theater",
+      "image": "images/national-theater.jpg",
+      "address": "Lagos, Nigeria",
+      "description": "The National Theatre, the most important cultural and artistic center of Nigeria, whose construction was completed in 1976, is being renovated after 45 years to restore its former glory."
+    },
+    {
+      "id": 5,
+      "name": "Marine Lake",
+      "image": "images/marine-lakes.jpg",
+      "address": "Lagos, Nigeria",
+      "description": "The term 'marine lake' in Lagos, Nigeria, most likely refers to the Lagos Lagoon, a large body of water separated from the Atlantic Ocean by a sand barrier, offering beautiful waterfront views."
+    },
+    {
+      "id": 6,
+      "name": "Olumo Rock",
+      "image": "images/olumo-rock.jpg",
+      "address": "Abeokuta, Ogun State Nigeria",
+      "description": "Olumo Rock is a mountain in south-western Nigeria. It is located in the city of Abeokuta, Ogun State, and was normally used as a natural fortress during inter-tribal warfare in the 19th century."
+    },
+    {
+      "id": 7,
+      "name": "Iyake Suspended Lake",
+      "image": "images/iyake-lake.webp",
+      "address": "Ado Awaye, Oyo State, Nigeria",
+      "description": "Iyake Lake, one of the suspended lakes in the world is nestled in the serene town of Ado Awaye in Oyo State. This is the most extraordinary adventure to embark on for nature enthusiasts."
+    },
+    {
+      "id": 8,
+      "name": "Gurara Waterfalls",
+      "image": "images/gurara_waterfall.jpg",
+      "address": "Gurara, Niger State, Nigeria",
+      "description": "Gurara Waterfalls is located in Gurara, a local government area of Niger State, North Central Nigeria. The waterfalls is approximately 30 metres in height and it lies on the Gurara River along the Suleja-Minna Road."
+    }
+  ]
+}

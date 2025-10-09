@@ -1,61 +1,63 @@
-const menuItem = document.querySelector("#menu");
-const navElement = document.querySelector("#animated-menu");
-
-// Toggle navigation menu on mobile
-menuItem.addEventListener("click", () => {
-    //navElement.classList.toggle("responsive");
-    navElement.classList.toggle("open");
-    menuItem.classList.toggle("open");
-
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const yearSpan = document.getElementById("year");
-  const lastModifiedSpan = document.getElementById("lastModified");
+// Track page visits and display message
+function displayVisitMessage() {
+  const visitMessage = document.getElementById('visit-message');
+  const lastVisit = localStorage.getItem('lastVisit');
+  const currentTime = Date.now();
   
-  // Update year and last modified
-  yearSpan.textContent = new Date().getFullYear();
-  lastModifiedSpan.textContent = document.lastModified;
-});
-
-
-
-
-
-
-    const visitMsg = document.getElementById("visit-message");
-    const lastVisit = localStorage.getItem("lastVisit");
-    const now = Date.now();
-
-    if (!lastVisit) {
-      visitMsg.textContent = "Welcome! Let us know if you have any questions.";
+  if (!lastVisit) {
+    // First visit
+    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+  } else {
+    const timeDiff = currentTime - parseInt(lastVisit);
+    const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    
+    if (daysDiff < 1) {
+      visitMessage.textContent = "Back so soon! Awesome!";
     } else {
-      const diff = now - parseInt(lastVisit);
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      if (days < 1) {
-        visitMsg.textContent = "Back so soon! Awesome!";
-      } else {
-        visitMsg.textContent = `You last visited ${days} day${days === 1 ? "" : "s"} ago.`;
-      }
+      const dayText = daysDiff === 1 ? "day" : "days";
+      visitMessage.textContent = `You last visited ${daysDiff} ${dayText} ago.`;
     }
-    localStorage.setItem("lastVisit", now);
+  }
+  
+  // Store current visit time
+  localStorage.setItem('lastVisit', currentTime.toString());
+}
 
-    fetch("data/items.json")
-      .then((res) => res.json())
-      .then((items) => {
-        const container = document.getElementById("card-container");
-        items.forEach((item) => {
-          const card = document.createElement("div");
-          card.className = "card";
-          card.innerHTML = `
-            <h2>${item.name}</h2>
-            
-              <img src="images/${item.image}" alt="${item.name}" width="300" height="200" loading="lazy">
-            
-            <address>${item.address}</address>
-            <p>${item.description}</p>
-            <button>Learn More</button>
-          `;
-          container.appendChild(card);
-        });
+// Load places data and create cards
+function loadPlaces() {
+  fetch('data/places.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('card-container');
+      
+      data.places.forEach(place => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        
+        card.innerHTML = `
+          <h2>${place.name}</h2>
+          <figure>
+            <img src="${place.image}" alt="${place.name}" width="300" height="200" loading="lazy">
+          </figure>
+          <address>${place.address}</address>
+          <p>${place.description}</p>
+          <button>Learn More</button>
+        `;
+        
+        container.appendChild(card);
       });
+    })
+    .catch(error => {
+      console.error('Error loading places data:', error);
+    });
+}
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+  displayVisitMessage();
+  loadPlaces();
+  
+  // Update year and last modified date in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('lastModified').textContent = document.lastModified;
+});
