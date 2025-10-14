@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Akinlolu Tomiwa Ariyo">
-    <meta name="description" content="AIE Interiors - Premium home and office furniture with fast delivery and eco-friendly materials">
-    <title>AIE Interiors | Premium Home & Office Furniture</title>
+    <meta name="description" content="Browse our collection of premium home and office furniture at AIE Interiors">
+    <title>Products | AIE Interiors</title>
     
     <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="AIE Interiors">
-    <meta property="og:description" content="Premium home and office furniture with fast delivery and eco-friendly materials">
+    <meta property="og:title" content="Products | AIE Interiors">
+    <meta property="og:description" content="Browse our collection of premium home and office furniture">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://omoakinni.github.io/wdd231/final-project">
-    <meta property="og:image" content="https://omoakinni.github.io/wdd231/final-project/images/hero-image.jpg">
+    <meta property="og:url" content="https://omoakinni.github.io/wdd231/final-project/products.html">
     
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -22,6 +21,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/modules/header.css">
     <link rel="stylesheet" href="styles/modules/footer.css">
+    <link rel="stylesheet" href="styles/modules/products.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Header (same as index.html) -->
     <header>
         <div class="header-container">
             <div class="brand">
@@ -38,18 +38,16 @@
                 <span class="brand-title">AIE Interiors</span>
             </div>
             
-            <!-- Hamburger Menu -->
             <button class="hamburger" aria-label="Toggle navigation menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
             
-            <!-- Navigation -->
             <nav class="navigation">
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
@@ -57,58 +55,59 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Transform Your Space with Premium Furniture</h1>
-            <p>Discover our curated collection of home and office furniture, crafted with precision and designed for comfort.</p>
-            <a href="products.html" class="btn btn-primary">Shop Now</a>
-        </div>
-        <div class="hero-image">
-            <img src="images/hero-image.jpg" alt="Modern living room furniture" loading="lazy">
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="featured-products">
+    <main class="products-page">
         <div class="container">
-            <h2>Featured Products</h2>
-            <div id="featured-products-container" class="products-grid">
+            <h1>Our Products</h1>
+            
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="living-room">Living Room</option>
+                    <option value="bedroom">Bedroom</option>
+                    <option value="office">Office</option>
+                    <option value="dining">Dining</option>
+                </select>
+                
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="0-100">Under $100</option>
+                    <option value="100-300">$100 - $300</option>
+                    <option value="300-500">$300 - $500</option>
+                    <option value="500+">$500+</option>
+                </select>
+                
+                <button id="reset-filters" class="btn btn-secondary">Reset Filters</button>
+            </div>
+            
+            <!-- Products Grid -->
+            <div id="products-container" class="products-grid">
                 <!-- Products will be dynamically loaded here -->
             </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="why-us">
-        <div class="container">
-            <h2>Why Choose AIE Interiors</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">🚚</div>
-                    <h3>Fast Delivery</h3>
-                    <p>Get your furniture delivered quickly with our efficient shipping network.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🌿</div>
-                    <h3>Eco-Friendly</h3>
-                    <p>Our products are made from sustainable materials with minimal environmental impact.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Easy Assembly</h3>
-                    <p>Simple setup with clear instructions and all necessary tools included.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">💎</div>
-                    <h3>Premium Quality</h3>
-                    <p>Durable materials and expert craftsmanship ensure long-lasting furniture.</p>
-                </div>
+            
+            <!-- Loading Indicator -->
+            <div id="loading-indicator" class="loading">
+                <p>Loading products...</p>
+            </div>
+            
+            <!-- Error Message -->
+            <div id="error-message" class="error hidden">
+                <p>Failed to load products. Please try again later.</p>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-product-details">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
