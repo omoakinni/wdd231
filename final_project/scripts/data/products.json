@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Modern Leather Sofa",
+        "category": "living-room",
+        "price": 899,
+        "material": "Genuine Leather",
+        "dimensions": "84\"W x 36\"D x 32\"H",
+        "description": "A luxurious leather sofa with contemporary design, perfect for modern living rooms.",
+        "image": "images/products/sofa-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Wooden Dining Table",
+        "category": "dining",
+        "price": 450,
+        "material": "Solid Oak",
+        "dimensions": "72\"L x 36\"W x 30\"H",
+        "description": "Handcrafted solid oak dining table that seats 6-8 people comfortably.",
+        "image": "images/products/dining-table-1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Ergonomic Office Chair",
+        "category": "office",
+        "price": 299,
+        "material": "Mesh & Aluminum",
+        "dimensions": "26\"W x 26\"D x 45\"H",
+        "description": "Professional ergonomic office chair with lumbar support and adjustable height.",
+        "image": "images/products/office-chair-1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "King Size Bed Frame",
+        "category": "bedroom",
+        "price": 950,
+        "material": "Solid Wood",
+        "dimensions": "80\"W x 76\"L x 45\"H",
+        "description": "Elegant king size bed frame with built-in storage and headboard.",
+        "image": "images/products/bed-1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bookshelf Unit",
+        "category": "living-room",
+        "price": 320,
+        "material": "Engineered Wood",
+        "dimensions": "60\"W x 12\"D x 72\"H",
+        "description": "5-shelf bookcase with adjustable shelves for versatile storage options.",
+        "image": "images/products/bookshelf-1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Coffee Table Set",
+        "category": "living-room",
+        "price": 280,
+        "material": "Glass & Metal",
+        "dimensions": "48\"W x 24\"D x 18\"H",
+        "description": "Modern coffee table with tempered glass top and metal frame.",
+        "image": "images/products/coffee-table-1.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Executive Desk",
+        "category": "office",
+        "price": 520,
+        "material": "Walnut Veneer",
+        "dimensions": "60\"W x 30\"D x 30\"H",
+        "description": "Spacious executive desk with cable management and drawer storage.",
+        "image": "images/products/desk-1.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Wardrobe Cabinet",
+        "category": "bedroom",
+        "price": 480,
+        "material": "Particle Board",
+        "dimensions": "48\"W x 20\"D x 72\"H",
+        "description": "3-door wardrobe with hanging space and shelving for organized storage.",
+        "image": "images/products/wardrobe-1.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Dining Chair Set",
+        "category": "dining",
+        "price": 720,
+        "material": "Upholstered",
+        "dimensions": "18\"W x 20\"D x 36\"H",
+        "description": "Set of 4 comfortable dining chairs with padded seats and backs.",
+        "image": "images/products/dining-chairs-1.jpg"
+    },
+    {
+        "id": 10,
+        "name": "TV Stand",
+        "category": "living-room",
+        "price": 1200,
+        "material": "MDF & Metal",
+        "dimensions": "55\"W x 16\"D x 24\"H",
+        "description": "Media console with open shelves and closed storage for electronics.",
+        "image": "images/products/tv-stand-1.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Fabric Sectional Sofa",
+        "category": "living-room",
+        "price": 1200,
+        "material": "Premium Fabric",
+        "dimensions": "120\"W x 40\"D x 34\"H",
+        "description": "Large L-shaped sectional sofa with chaise lounge, perfect for family rooms.",
+        "image": "images/products/sectional-1.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Nightstand",
+        "category": "bedroom",
+        "price": 120,
+        "material": "Solid Wood",
+        "dimensions": "20\"W x 16\"D x 26\"H",
+        "description": "Bedside table with drawer and open shelf for convenient storage.",
+        "image": "images/products/nightstand-1.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Bar Stools",
+        "category": "dining",
+        "price": 170,
+        "material": "Metal & Wood",
+        "dimensions": "16\"W x 16\"D x 42\"H",
+        "description": "Set of 2 industrial-style bar stools with comfortable footrests.",
+        "image": "images/products/bar-stools-1.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Filing Cabinet",
+        "category": "office",
+        "price": 700,
+        "material": "Steel",
+        "dimensions": "18\"W x 28\"D x 52\"H",
+        "description": "2-drawer letter-size filing cabinet with lock for document security.",
+        "image": "images/products/filing-cabinet-1.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Accent Chair",
+        "category": "living-room",
+        "price": 2250,
+        "material": "Velvet",
+        "dimensions": "32\"W x 32\"D x 32\"H",
+        "description": "Elegant velvet accent chair with gold metal legs for stylish seating.",
+        "image": "images/products/accent-chair-1.jpg"
+    }
+]
